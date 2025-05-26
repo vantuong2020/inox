@@ -1,4 +1,4 @@
-ấm inox 304 là gì?
+Tấm inox 304 là gì?
 
 Tấm inox 304 là một dạng sản phẩm thép không gỉ (inox) được sản xuất từ hợp kim thép chứa thành phần chính là sắt (Fe), crom (Cr), và niken (Ni), trong đó tỉ lệ crom khoảng 18% và niken khoảng 8%. Đây là loại inox phổ biến nhất trong nhóm thép không gỉ Austenitic – một nhóm có độ bền cao, khả năng chống ăn mòn tốt và dễ gia công, định hình. Tấm inox 304 được ứng dụng rộng rãi trong nhiều lĩnh vực của đời sống và công nghiệp nhờ những đặc tính vượt trội về cơ lý tính và khả năng chịu được môi trường khắc nghiệt.
 
