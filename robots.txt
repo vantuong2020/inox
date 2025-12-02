@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vantuong2020.github.io/inox/sitemap.xml
