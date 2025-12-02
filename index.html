@@ -1,12 +1,312 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trang GitHub Pages của Inox</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tân Đạt Tank — Bể nước ngầm inox | Giải pháp dự trữ nước an toàn</title>
+  <meta name="description" content="Tân Đạt Tank chuyên sản xuất bể nước ngầm inox — giải pháp hiện đại cho dự trữ nước sạch, an toàn và bền bỉ cho hộ gia đình, công trình và công nghiệp." />
+  <meta property="og:title" content="Tân Đạt Tank — Bể nước ngầm inox" />
+  <meta property="og:description" content="Giải pháp hiện đại cho nhu cầu dự trữ nước sạch, an toàn và bền bỉ." />
+  <meta property="og:image" content="" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0f6efd;
+      --muted:#6b7280;
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#f7fbff 0%, var(--bg) 100%);
+      color:#0f1724;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* Container */
+    .wrap{max-width:1100px;margin:0 auto;padding:28px;}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{
+      width:56px;height:56px;border-radius:12px;
+      display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(135deg,var(--accent),#06b6d4);
+      color:white;font-weight:800;font-size:20px;box-shadow:0 6px 20px rgba(15,110,253,0.12);
+    }
+    .brand h1{margin:0;font-size:1.05rem}
+    .brand p{margin:0;font-size:0.85rem;color:var(--muted)}
+
+    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
+    .cta{background:var(--accent);color:white;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(15,110,253,0.12)}
+    .cta:hover{transform:translateY(-2px);transition:all .18s ease}
+
+    /* Hero */
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px;
+      background:linear-gradient(180deg, rgba(15,110,253,0.03), transparent);
+      padding:34px;border-radius:16px;
+      box-shadow:0 10px 30px rgba(2,6,23,0.04);
+      backdrop-filter: blur(6px);
+    }
+    .hero-left h2{margin:0;font-weight:800;font-size:2rem;line-height:1.03}
+    .eyebrow{display:inline-block;background:linear-gradient(90deg,#e6f0ff,#f0fffb);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;margin-bottom:12px;font-size:0.85rem}
+    .hero-left p{color:var(--muted);margin-top:12px;margin-bottom:18px}
+    .kpis{display:flex;gap:12px;margin-top:10px}
+    .kpi{background:var(--card);padding:12px;border-radius:12px;min-width:120px;box-shadow:0 6px 16px rgba(2,6,23,0.04)}
+    .kpi b{display:block;font-size:1.05rem}
+    .actions{display:flex;gap:12px;margin-top:18px}
+    .btn-outline{border:2px solid var(--accent);padding:10px 14px;border-radius:10px;text-decoration:none;color:var(--accent);font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;box-shadow:0 8px 28px rgba(15,110,253,0.12)}
+
+    /* Hero right card */
+    .card{
+      background:linear-gradient(180deg, #ffffff, #fbfdff);
+      border-radius:12px;padding:18px;box-shadow:0 12px 40px rgba(2,6,23,0.06);
+    }
+    .tank-illustration{height:200px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#eaf6ff,#f6fcff);color:var(--accent);font-weight:800}
+    .contact{margin-top:14px;font-size:0.95rem;color:#0b1220}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:700}
+
+    /* Features / Benefits */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+    .feature{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 8px 22px rgba(2,6,23,0.04)}
+    .feature h3{margin:0 0 8px 0;font-size:1.05rem}
+    .feature p{margin:0;color:var(--muted);font-size:0.95rem}
+
+    /* Products list */
+    .products{margin-top:26px;background:linear-gradient(180deg,#fff,#fbfdff);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.04)}
+    .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:12px}
+    .product{padding:12px;border-radius:10px;background:linear-gradient(180deg,#ffffff,#f7fbff);border:1px solid rgba(15,110,253,0.06);display:flex;flex-direction:column;gap:8px}
+    .product a{font-weight:700;color:#0b1220;text-decoration:none}
+    .tag{font-size:0.82rem;color:var(--muted);}
+
+    /* Footer */
+    footer{margin-top:36px;padding:22px;text-align:center;color:var(--muted)}
+    .addr{font-weight:600;color:#0b1220;margin-top:8px}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr; padding:20px}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .wrap{padding:18px}
+    }
+    @media (max-width:640px){
+      nav a{display:none}
+      .grid{grid-template-columns:1fr}
+      .brand p{display:none}
+      .product-grid{grid-template-columns:1fr}
+      .kpis{flex-direction:column}
+      .hero-left h2{font-size:1.6rem}
+    }
+  </style>
 </head>
 <body>
-  <h1>Xin chào! 👋</h1>
-  <p>Website GitHub Pages đã hoạt động.</p>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">TD</div>
+        <div>
+          <h1>Tân Đạt Tank</h1>
+          <p>Sản xuất bể nước ngầm inox — Giải pháp dự trữ nước</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#san-pham">Sản phẩm</a>
+        <a href="#uu-diem">Ưu điểm</a>
+        <a href="#lien-he">Liên hệ</a>
+        <a class="cta" href="#lien-he">Hotline: 0963.969.282</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Giới thiệu">
+      <div class="hero-left">
+        <span class="eyebrow">Bể nước ngầm inox — Bền bỉ & An toàn</span>
+        <h2>Tân Đạt Tank — Giải pháp dự trữ nước sạch cho gia đình, công trình & công nghiệp</h2>
+        <p>Tân Đạt Tank chuyên sản xuất bể nước ngầm inox — giải pháp hiện đại cho nhu cầu dự trữ nước sạch, an toàn và bền bỉ. Sản phẩm phù hợp cho hộ gia đình, công trình dân dụng và dự án công nghiệp.</p>
+
+        <div class="kpis" role="list">
+          <div class="kpi" role="listitem"><b>Chất liệu 304/316</b><span class="tag">Không gỉ, an toàn thực phẩm</span></div>
+          <div class="kpi" role="listitem"><b>Độ bền cao</b><span class="tag">Tuổi thọ hàng chục năm</span></div>
+          <div class="kpi" role="listitem"><b>Nhiều dung tích</b><span class="tag">1000L → 20000L</span></div>
+        </div>
+
+        <div class="actions">
+          <a class="btn-primary" href="https://tandattank.com/be-nuoc-ngam-inox/" target="_blank" rel="noopener">Xem chi tiết sản phẩm</a>
+          <a class="btn-outline" href="#lien-he">Yêu cầu báo giá</a>
+        </div>
+
+        <p style="margin-top:14px;color:var(--muted);font-size:0.95rem">
+          Hotline: <a href="tel:0963969282" style="color:var(--accent);font-weight:800;text-decoration:none">0963.969.282</a> — <a href="tel:0979726567" style="color:var(--accent);font-weight:800;text-decoration:none">0979.726.567</a>
+        </p>
+      </div>
+
+      <aside class="card" aria-label="Thông tin liên hệ">
+        <div class="tank-illustration">
+          <div style="text-align:center;">
+            <svg width="110" height="110" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="6" y="12" width="52" height="40" rx="4" stroke="currentColor" stroke-width="2" fill="transparent"/>
+              <path d="M12 18h40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 26h40" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="50" cy="18" r="2" fill="currentColor"/>
+            </svg>
+            <div style="font-weight:800;font-size:18px;margin-top:8px;color:var(--accent)">BỂ NƯỚC NGẦM INOX</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:6px">An toàn — Tiết kiệm — Dễ lắp đặt</div>
+          </div>
+        </div>
+
+        <div class="contact">
+          <div><strong>Website:</strong> <a href="https://tandattank.com" target="_blank" rel="noopener">tandattank.com</a></div>
+          <div style="margin-top:8px"><strong>Địa chỉ:</strong> Số 17.1, Lô CN 03, Cụm CN Phạm Ngũ Lão – Nghĩa Dân, Xã Lương Bằng, Tỉnh Hưng Yên</div>
+          <div style="margin-top:10px"><strong>Hotline:</strong> <a href="tel:0963969282">0963.969.282</a>, <a href="tel:0979726567">0979.726.567</a></div>
+          <div style="margin-top:10px"><strong>Hashtags:</strong>
+            <div style="margin-top:6px;color:var(--muted);font-size:0.92rem">
+              #BeNuocNgamInox • #GiaBeNuocNgamInox • #BonInoxDatNgam • #BeInoxNgamGiaDinh • #BeNuocInoxCongNghiep • #TanDatTank
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Features -->
+    <section id="uu-diem" class="grid" aria-label="Ưu điểm">
+      <div class="feature">
+        <h3>Vật liệu cao cấp</h3>
+        <p>Thép không gỉ 304/316 — không mùi, không vị, chống ăn mòn. An toàn cho nguồn nước sinh hoạt.</p>
+      </div>
+      <div class="feature">
+        <h3>Thiết kế tối ưu</h3>
+        <p>Bố trí hợp lý, dễ lắp đặt, dễ bảo trì và phù hợp nhiều loại địa hình.</p>
+      </div>
+      <div class="feature">
+        <h3>Giải pháp theo yêu cầu</h3>
+        <p>Cung cấp nhiều dung tích: 1000L → 20000L. Thiết kế, sản xuất theo yêu cầu dự án.</p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="san-pham" class="products" aria-label="Sản phẩm">
+      <h2 style="margin:0">Danh sách mẫu bể (tham khảo nhanh)</h2>
+      <p style="margin:6px 0 0;color:var(--muted)">Các liên kết dưới đây dẫn tới chi tiết từng mẫu trên website chính thức.</p>
+
+      <div class="product-grid" style="margin-top:12px">
+        <div class="product">
+          <div class="tag">Mẫu 1000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-1000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 1000L</a>
+          <div class="tag">Chi tiết & báo giá</div>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 1500L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-1500l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 1500L</a>
+          <div class="tag">Chi tiết & báo giá</div>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 2000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-2000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 2000L</a>
+          <div class="tag">Chi tiết & báo giá</div>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 3000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-3000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 3000L</a>
+          <div class="tag">Chi tiết & báo giá</div>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 4000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-4000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 4000L</a>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 5000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-5000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 5000L</a>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 6000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-6000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 6000L</a>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 8000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-8000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 8000L</a>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 10000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-10000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 10000L</a>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 12000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-12000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 12000L</a>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 15000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-15000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 15000L</a>
+        </div>
+
+        <div class="product">
+          <div class="tag">Mẫu 20000L</div>
+          <a href="https://tandattank.com/be-nuoc-ngam-inox-20000l-tan-dat/" target="_blank" rel="noopener">Bể nước ngầm inox 20000L</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="lien-he" style="margin-top:28px;display:flex;gap:18px;flex-wrap:wrap;align-items:stretch">
+      <div style="flex:1;min-width:260px;background:linear-gradient(90deg,#ffffff,#f8ffff);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.04)">
+        <h3 style="margin-top:0">Liên hệ đặt hàng & hỗ trợ kỹ thuật</h3>
+        <p style="color:var(--muted)">Gửi yêu cầu qua hotline hoặc truy cập website để xem catalog chi tiết và báo giá theo dung tích.</p>
+        <p style="margin:8px 0"><strong>Hotline:</strong> <a href="tel:0963969282" style="color:var(--accent);font-weight:800">0963.969.282</a> — <a href="tel:0979726567" style="color:var(--accent);font-weight:800">0979.726.567</a></p>
+        <p style="margin:6px 0"><strong>Địa chỉ:</strong> Số 17.1, Lô CN 03, Cụm CN Phạm Ngũ Lão – Nghĩa Dân, Xã Lương Bằng, Tỉnh Hưng Yên</p>
+        <p style="margin:6px 0"><a class="btn-primary" href="https://tandattank.com/be-nuoc-ngam-inox/" target="_blank" rel="noopener">Truy cập trang chính</a></p>
+      </div>
+
+      <div style="width:320px;min-width:260px;background:linear-gradient(90deg,#fff,#fcfeff);padding:18px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.04)">
+        <h3 style="margin-top:0">Mạng xã hội & Hashtag</h3>
+        <p style="color:var(--muted)">Sử dụng hashtag để tăng tiếp cận:</p>
+        <div style="margin-top:8px;font-weight:700">#BeNuocNgamInox</div>
+        <div style="margin-top:6px;color:var(--muted)">#GiaBeNuocNgamInox • #BonInoxDatNgam • #BeInoxNgamGiaDinh • #BeNuocInoxCongNghiep • #TanDatTank</div>
+
+        <div style="margin-top:12px">
+          <a class="btn-outline" href="https://tandattank.com" target="_blank" rel="noopener">TandatTank.com</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Tân Đạt Tank — All rights reserved.</div>
+      <div class="addr">Số 17.1, Lô CN 03, Cụm CN Phạm Ngũ Lão – Nghĩa Dân, Xã Lương Bằng, Hưng Yên</div>
+    </footer>
+  </div>
+
+  <script>
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
 </body>
 </html>
