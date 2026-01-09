@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Tấm Inox 201 / 304 / 316 | Inox Tân Đạt - Báo giá nhanh, giao hàng toàn quốc</title>
+  <meta name="description" content="Trang chủ giới thiệu tấm inox 201, 304, 316 - Inox Tân Đạt cung cấp đa dạng độ dày, cắt theo yêu cầu, báo giá nhanh, giao hàng toàn quốc." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tấm Inox 201 / 304 / 316 | Inox Tân Đạt" />
+  <meta property="og:description" content="Tấm inox 201, 304, 316 đa dạng độ dày, tư vấn chọn mác thép theo nhu cầu, báo giá nhanh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="vi_VN" />
+
+  <style>
+    :root{
+      --bg:#070b14;
+      --panel: rgba(255,255,255,.06);
+      --panel2: rgba(255,255,255,.09);
+      --stroke: rgba(255,255,255,.12);
+      --text: rgba(255,255,255,.88);
+      --muted: rgba(255,255,255,.66);
+      --muted2: rgba(255,255,255,.52);
+      --brand: #7dd3fc;
+      --brand2:#a78bfa;
+      --ok:#34d399;
+      --warn:#fbbf24;
+      --shadow: 0 16px 40px rgba(0,0,0,.45);
+      --r: 18px;
+      --r2: 26px;
+      --max: 1180px;
+      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:var(--font);
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 15% 10%, rgba(125,211,252,.18), transparent 65%),
+        radial-gradient(900px 600px at 85% 5%, rgba(167,139,250,.16), transparent 60%),
+        radial-gradient(1000px 800px at 80% 85%, rgba(52,211,153,.10), transparent 62%),
+        linear-gradient(180deg, #050816, #070b14 40%, #05070f);
+      overflow-x:hidden;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .topbar{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(14px);
+      background: rgba(7,11,20,.55);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .logo{
+      display:flex; align-items:center; gap:10px; min-width:220px;
+    }
+    .mark{
+      width:42px; height:42px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(125,211,252,.95), rgba(167,139,250,.95));
+      box-shadow: 0 10px 26px rgba(125,211,252,.18);
+      position:relative;
+    }
+    .mark:after{
+      content:"";
+      position:absolute; inset:9px;
+      border-radius:12px;
+      background: linear-gradient(135deg, rgba(7,11,20,.35), rgba(255,255,255,.12));
+      border:1px solid rgba(255,255,255,.18);
+    }
+    .brand{
+      display:flex; flex-direction:column; line-height:1.1;
+    }
+    .brand b{letter-spacing:.2px}
+    .brand span{font-size:12px; color:var(--muted2)}
+    .links{
+      display:flex; align-items:center; gap:14px;
+      flex-wrap:wrap; justify-content:flex-end;
+    }
+    .links a{
+      padding:10px 12px;
+      border:1px solid transparent;
+      border-radius:12px;
+      color:var(--muted);
+      transition:.2s ease;
+      font-size:14px;
+    }
+    .links a:hover{border-color:rgba(255,255,255,.14); color:var(--text); background:rgba(255,255,255,.04)}
+    .cta{
+      display:flex; gap:10px; align-items:center;
+    }
+    .btn{
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      padding:10px 14px;
+      border-radius:14px;
+      display:inline-flex; gap:10px; align-items:center;
+      box-shadow: 0 10px 22px rgba(0,0,0,.25);
+      transition: .2s ease;
+      font-weight:600;
+      font-size:14px;
+      cursor:pointer;
+      user-select:none;
+    }
+    .btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.09)}
+    .btn.primary{
+      border-color: rgba(125,211,252,.45);
+      background: linear-gradient(135deg, rgba(125,211,252,.20), rgba(167,139,250,.18));
+    }
+    .btn.primary:hover{border-color: rgba(125,211,252,.7)}
+    .icon{
+      width:18px; height:18px; display:inline-block;
+      filter: drop-shadow(0 6px 12px rgba(0,0,0,.25));
+    }
+
+    /* Hero */
+    .hero{padding:54px 0 26px}
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    .card{
+      border:1px solid rgba(255,255,255,.12);
+      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      border-radius: var(--r2);
+      box-shadow: var(--shadow);
+    }
+    .heroMain{padding:26px}
+    .kicker{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .dot{
+      width:9px; height:9px; border-radius:99px;
+      background: var(--ok);
+      box-shadow: 0 0 0 6px rgba(52,211,153,.12);
+    }
+    h1{
+      margin:14px 0 10px;
+      font-size:44px;
+      line-height:1.08;
+      letter-spacing:-.6px;
+    }
+    .lead{
+      color:var(--muted);
+      font-size:16px;
+      line-height:1.7;
+      margin:0 0 16px;
+      max-width:62ch;
+    }
+    .heroActions{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
+    .mini{
+      display:flex; gap:10px; flex-wrap:wrap; margin-top:18px
+    }
+    .pill{
+      padding:10px 12px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+      font-size:13px;
+      display:inline-flex; gap:10px; align-items:center;
+    }
+    .pill b{color:var(--text); font-weight:700}
+    .heroSide{padding:18px}
+    .sideHeader{
+      display:flex; align-items:flex-start; justify-content:space-between; gap:10px;
+      padding:14px 14px 10px;
+    }
+    .sideHeader h3{margin:0; font-size:16px}
+    .sideHeader p{margin:6px 0 0; color:var(--muted2); font-size:13px; line-height:1.45}
+    .sideBody{padding:0 14px 14px}
+    .statGrid{
+      display:grid; grid-template-columns: repeat(2,1fr); gap:12px;
+    }
+    .stat{
+      padding:14px;
+      border-radius:16px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+    }
+    .stat b{font-size:18px}
+    .stat span{display:block; color:var(--muted2); font-size:12px; margin-top:6px}
+    .notice{
+      margin-top:12px;
+      padding:14px;
+      border-radius:16px;
+      border:1px solid rgba(125,211,252,.25);
+      background: linear-gradient(135deg, rgba(125,211,252,.08), rgba(167,139,250,.06));
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.6;
+    }
+
+    /* Sections */
+    section{padding:26px 0}
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:10px;
+      margin-bottom:14px;
+    }
+    .sectionTitle h2{
+      margin:0;
+      font-size:22px;
+      letter-spacing:-.2px;
+    }
+    .sectionTitle p{margin:0; color:var(--muted2); font-size:13px; line-height:1.6}
+    .grid3{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:14px;
+    }
+    .grid2{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+    }
+    .item{
+      padding:16px;
+      border-radius: var(--r);
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      transition:.2s ease;
+      position:relative;
+      overflow:hidden;
+    }
+    .item:before{
+      content:"";
+      position:absolute; inset:-80px;
+      background: radial-gradient(500px 220px at 20% 10%, rgba(125,211,252,.18), transparent 60%),
+                  radial-gradient(450px 240px at 90% 0%, rgba(167,139,250,.14), transparent 60%);
+      opacity:.55;
+      pointer-events:none;
+      transform: rotate(6deg);
+    }
+    .item:hover{transform: translateY(-2px); background: rgba(255,255,255,.07); border-color: rgba(255,255,255,.18)}
+    .item > *{position:relative}
+    .tagRow{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px}
+    .tag{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+    }
+    .item h3{margin:0 0 6px; font-size:16px}
+    .item p{margin:0; color:var(--muted); font-size:13px; line-height:1.6}
+    .item .actions{margin-top:12px; display:flex; gap:10px; flex-wrap:wrap}
+    .linkBtn{
+      padding:9px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color:var(--text);
+      font-size:13px;
+      font-weight:700;
+      transition:.2s ease;
+      display:inline-flex; align-items:center; gap:8px;
+    }
+    .linkBtn:hover{background: rgba(255,255,255,.08); transform: translateY(-1px)}
+    .linkBtn.soft{color:var(--muted); font-weight:650}
+    .arrow{opacity:.85}
+
+    /* Quick thickness */
+    .chips{display:flex; flex-wrap:wrap; gap:10px}
+    .chip{
+      padding:10px 12px;
+      border-radius: 999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color:var(--muted);
+      font-size:13px;
+      transition:.2s ease;
+    }
+    .chip:hover{background: rgba(255,255,255,.08); color:var(--text); border-color: rgba(125,211,252,.38)}
+    .divider{
+      height:1px;
+      background: rgba(255,255,255,.10);
+      margin:10px 0 0;
+    }
+
+    /* Footer */
+    footer{
+      padding:26px 0 40px;
+      border-top:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      margin-top:22px;
+    }
+    .footGrid{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap:14px;
+      align-items:start;
+    }
+    .footBox{
+      padding:16px;
+      border-radius: var(--r);
+      border:1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+    }
+    .footBox h4{margin:0 0 8px}
+    .footBox p, .footBox li{color:var(--muted); font-size:13px; line-height:1.7}
+    ul{margin:10px 0 0; padding-left:18px}
+    .copy{
+      margin-top:14px;
+      color:rgba(255,255,255,.46);
+      font-size:12px;
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns: 1fr}
+      h1{font-size:36px}
+      .grid3{grid-template-columns: 1fr}
+      .grid2{grid-template-columns: 1fr}
+      .links{display:none}
+      .logo{min-width:auto}
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="nav">
+        <a class="logo" href="#top" aria-label="Inox Tân Đạt">
+          <div class="mark" aria-hidden="true"></div>
+          <div class="brand">
+            <b>Inox Tân Đạt</b>
+            <span>Tấm inox 201 • 304 • 316 | Cắt theo yêu cầu</span>
+          </div>
+        </a>
+
+        <div class="links" aria-label="Điều hướng">
+          <a href="#san-pham">Sản phẩm</a>
+          <a href="#do-day">Độ dày 304</a>
+          <a href="#bang-gia">Bảng giá</a>
+          <a href="#kien-thuc">Kiến thức</a>
+          <a href="#lien-he">Liên hệ</a>
+        </div>
+
+        <div class="cta">
+          <a class="btn" href="https://inoxtandat.vn/san-pham/tam-inox/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Danh mục tấm inox
+          </a>
+          <a class="btn primary" href="#lien-he">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M21 15.5a16 16 0 0 1-6 1.8A16 16 0 0 1 6 15.5v-7A16 16 0 0 1 12 7a16 16 0 0 1 9 1.5v7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Nhận báo giá nhanh
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <main id="top" class="container">
+    <div class="hero">
+      <div class="heroGrid">
+        <div class="card heroMain">
+          <div class="kicker"><span class="dot"></span> Hàng sẵn kho • Cắt theo quy cách • Hỗ trợ dự án</div>
+          <h1>Tấm Inox 201 / 304 / 316 <br/>Hiện đại • Bền đẹp • Chuẩn ứng dụng</h1>
+          <p class="lead">
+            Inox Tân Đạt cung cấp đa dạng <b>tấm inox 201</b>, <b>tấm inox 304</b>, <b>tấm inox 316</b> với nhiều độ dày,
+            bề mặt và quy cách. Tư vấn đúng mác thép theo môi trường sử dụng, tối ưu chi phí cho công trình & sản xuất.
+          </p>
+
+          <div class="heroActions">
+            <a class="btn primary" href="https://inoxtandat.vn/san-pham/tam-inox/" target="_blank" rel="noopener">
+              Xem sản phẩm tấm inox <span class="arrow">→</span>
+            </a>
+            <a class="btn" href="#do-day">Xem nhanh độ dày 304</a>
+            <a class="btn" href="#bang-gia">Bảng giá 201/304/316</a>
+          </div>
+
+          <div class="mini">
+            <div class="pill"><b>Cam kết</b> đúng mác • đúng độ dày</div>
+            <div class="pill"><b>Dịch vụ</b> cắt lẻ • cắt khổ • gia công</div>
+            <div class="pill"><b>Giao hàng</b> nhanh • toàn quốc</div>
+          </div>
+        </div>
+
+        <aside class="card heroSide" aria-label="Thông tin nhanh">
+          <div class="sideHeader">
+            <div>
+              <h3>Thông tin nổi bật</h3>
+              <p>Gợi ý nhanh để bạn chọn đúng loại tấm inox theo nhu cầu.</p>
+            </div>
+            <div class="tag" title="Chuyên ngành inox">PRO</div>
+          </div>
+          <div class="sideBody">
+            <div class="statGrid">
+              <div class="stat">
+                <b>Inox 201</b>
+                <span>Kinh tế • phù hợp nội thất, trang trí</span>
+              </div>
+              <div class="stat">
+                <b>Inox 304</b>
+                <span>Phổ biến • chống gỉ tốt • đa ứng dụng</span>
+              </div>
+              <div class="stat">
+                <b>Inox 316</b>
+                <span>Chống ăn mòn cao • môi trường khắc nghiệt</span>
+              </div>
+              <div class="stat">
+                <b>Tấm đặc biệt</b>
+                <span>Tấm màu • tấm chống trượt</span>
+              </div>
+            </div>
+
+            <div class="notice">
+              <b>Lưu ý:</b> Khi chọn inox, hãy cân nhắc <b>môi trường sử dụng</b> (ngoài trời, hóa chất, ven biển),
+              <b>độ dày</b>, <b>bề mặt</b> và <b>quy cách cắt</b> để tối ưu chi phí & tuổi thọ.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Products -->
+    <section id="san-pham">
+      <div class="sectionTitle">
+        <div>
+          <h2>Sản phẩm chủ lực</h2>
+          <p>Chọn đúng loại tấm inox theo mục đích sử dụng: dân dụng, công nghiệp, trang trí, chống trượt.</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Kinh tế</span><span class="tag">Dễ gia công</span><span class="tag">Nội thất</span>
+          </div>
+          <h3>Tấm Inox 201</h3>
+          <p>Giải pháp tối ưu chi phí, phù hợp các hạng mục trang trí – nội thất – gia công cơ bản.</p>
+          <div class="actions">
+            <a class="linkBtn" href="https://inoxtandat.vn/tin-chuyen-nganh/bang-bao-gia-tam-inox-201-moi-nhat-2024-531.html" target="_blank" rel="noopener">Bảng giá 201 <span class="arrow">→</span></a>
+            <a class="linkBtn soft" href="#lien-he">Yêu cầu báo giá</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Phổ biến</span><span class="tag">Chống gỉ tốt</span><span class="tag">Đa ứng dụng</span>
+          </div>
+          <h3>Tấm Inox 304</h3>
+          <p>Ứng dụng rộng: bồn bể, chế tạo, nhà xưởng, thiết bị… Có nhiều độ dày từ 0.5mm đến 12mm.</p>
+          <div class="actions">
+            <a class="linkBtn" href="https://inoxtandat.vn/tin-chuyen-nganh/bang-gia-inox-304-tam-moi-nhat-2024-530.html" target="_blank" rel="noopener">Bảng giá 304 <span class="arrow">→</span></a>
+            <a class="linkBtn soft" href="#do-day">Chọn độ dày 304</a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Cao cấp</span><span class="tag">Chống ăn mòn</span><span class="tag">Khắc nghiệt</span>
+          </div>
+          <h3>Tấm Inox 316</h3>
+          <p>Lựa chọn mạnh cho môi trường ven biển, hóa chất, thực phẩm – y tế, yêu cầu chống ăn mòn cao.</p>
+          <div class="actions">
+            <a class="linkBtn" href="https://inoxtandat.vn/tin-chuyen-nganh/bang-bao-gia-tam-inox-316-moi-nhat-2024-560.html" target="_blank" rel="noopener">Bảng giá 316 <span class="arrow">→</span></a>
+            <a class="linkBtn soft" href="#lien-he">Tư vấn vật liệu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="grid2" style="margin-top:14px">
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Trang trí</span><span class="tag">Thẩm mỹ</span><span class="tag">Màu sắc</span>
+          </div>
+          <h3>Tấm Inox Màu</h3>
+          <p>Tăng tính thẩm mỹ cho ốp tường, nội thất, showroom, bảng hiệu… phù hợp các không gian hiện đại.</p>
+          <div class="actions">
+            <a class="linkBtn" href="https://inoxtandat.vn/san-pham/tam-inox-mau/" target="_blank" rel="noopener">Xem tấm inox màu <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">An toàn</span><span class="tag">Chống trượt</span><span class="tag">Sàn – bậc thang</span>
+          </div>
+          <h3>Tấm Inox Chống Trượt</h3>
+          <p>Dùng cho sàn thao tác, bậc cầu thang, khu vực ẩm ướt… tăng độ bám và độ an toàn vận hành.</p>
+          <div class="actions">
+            <a class="linkBtn" href="https://inoxtandat.vn/san-pham/tam-inox-chong-truot/" target="_blank" rel="noopener">Xem tấm chống trượt <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thickness quick links -->
+    <section id="do-day">
+      <div class="sectionTitle">
+        <div>
+          <h2>Chọn nhanh độ dày tấm Inox 304</h2>
+          <p>Nhấn để mở bài chi tiết theo độ dày (đặc điểm – giá bán – ứng dụng).</p>
+        </div>
+      </div>
+
+      <div class="card" style="padding:16px">
+        <div class="chips" aria-label="Độ dày inox 304">
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-0-5mm-dac-diem-gia-ban-va-ung-dung-thuc-te-766.html">0.5mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-0-6mm-quy-cach-gia-moi-nhat-768.html">0.6mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-0-8mm-bao-gia-dac-diem-771.html">0.8mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bao-gia-tam-inox-304-day-1mm-572.html">1.0mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-1-2mm-quy-cach-bao-gia-ung-dung-772.html">1.2mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-1-5mm-co-ben-khong-gia-bao-nhieu-773.html">1.5mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bao-gia-tam-inox-304-day-2mm-573.html">2.0mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bao-gia-tam-inox-304-day-3mm-574.html">3.0mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bao-gia-tam-inox-304-day-4mm-575.html">4.0mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bao-gia-tam-inox-304-day-5mm-576.html">5.0mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-6mm-dac-diem-gia-ban-774.html">6.0mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-8mm-gia-bao-nhieu-775.html">8.0mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-10mm-la-gi-bao-gia-776.html">10mm</a>
+          <a class="chip" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/tam-inox-304-day-12mm-la-gi-bao-gia-uu-diem-777.html">12mm</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing & knowledge -->
+    <section id="bang-gia">
+      <div class="sectionTitle">
+        <div>
+          <h2>Bảng giá & bài viết chuyên ngành</h2>
+          <p>Tổng hợp nhanh các nội dung khách hàng hay cần khi mua tấm inox.</p>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Tổng quan</span><span class="tag">Cập nhật</span>
+          </div>
+          <h3>Bảng giá Inox 304 tấm</h3>
+          <p>Tổng quan giá inox 304 tấm mới nhất, giúp bạn dự toán nhanh chi phí vật tư.</p>
+          <div class="actions">
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bang-gia-inox-304-tam-moi-nhat-2024-530.html">Xem bảng giá <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Kinh tế</span><span class="tag">Báo giá</span>
+          </div>
+          <h3>Bảng báo giá tấm Inox 201</h3>
+          <p>Tham khảo bảng giá inox 201 để so sánh và lựa chọn phương án tối ưu chi phí.</p>
+          <div class="actions">
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bang-bao-gia-tam-inox-201-moi-nhat-2024-531.html">Xem bảng giá <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Hướng dẫn</span><span class="tag">Kinh nghiệm</span>
+          </div>
+          <h3>Lưu ý khi chọn mua inox tấm/cuộn</h3>
+          <p>Các tiêu chí quan trọng: mác thép, độ dày, bề mặt, nguồn gốc, chứng chỉ & ứng dụng.</p>
+          <div class="actions">
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/nhung-luu-y-khi-chon-mua-inox-tam-cuon-chat-luong-224.html">Đọc bài <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kien-thuc">
+      <div class="sectionTitle">
+        <div>
+          <h2>Gợi ý đọc nhanh: báo giá theo độ dày & hàng chính hãng</h2>
+          <p>Những bài viết giúp bạn ra quyết định nhanh khi cần báo giá & quy cách.</p>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Chính hãng</span><span class="tag">Uy tín</span>
+          </div>
+          <h3>Báo giá inox tấm 304 chính hãng</h3>
+          <p>Tham khảo nội dung về nguồn hàng, tiêu chuẩn và chính sách cung cấp tại Việt Nam.</p>
+          <div class="actions">
+            <a class="linkBtn" target="_blank" rel="noopener" href="https://inoxtandat.vn/tin-chuyen-nganh/bao-gia-inox-tam-304-chinh-hang-uy-tin-tai-viet-nam-426.html">Xem chi tiết <span class="arrow">→</span></a>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="tagRow">
+            <span class="tag">Quy cách</span><span class="tag">Dự toán</span>
+          </div>
+          <h3>Một số độ dày 304 phổ biến</h3>
+          <p>Đi thẳng vào bài theo độ dày: 0.5–12mm để xem đặc điểm, giá bán & ứng dụng thực tế.</p>
+          <div class="actions">
+            <a class="linkBtn soft" href="#do-day">Mở danh sách độ dày <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="lien-he">
+      <div class="sectionTitle">
+        <div>
+          <h2>Liên hệ nhận báo giá nhanh</h2>
+          <p>Điền thông tin để nhận báo giá theo quy cách (mác thép • độ dày • khổ tấm • số lượng).</p>
+        </div>
+      </div>
+
+      <div class="grid2">
+        <div class="card" style="padding:16px">
+          <form id="quoteForm" class="grid2" style="gap:12px; grid-template-columns: 1fr 1fr;">
+            <div style="grid-column:1/-1">
+              <label style="display:block;color:var(--muted2);font-size:12px;margin-bottom:6px">Họ và tên</label>
+              <input name="name" required placeholder="Ví dụ: Nguyễn Văn A"
+                style="width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:var(--text);outline:none" />
+            </div>
+
+            <div>
+              <label style="display:block;color:var(--muted2);font-size:12px;margin-bottom:6px">Số điện thoại</label>
+              <input name="phone" required placeholder="Ví dụ: 09xx xxx xxx"
+                style="width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:var(--text);outline:none" />
+            </div>
+
+            <div>
+              <label style="display:block;color:var(--muted2);font-size:12px;margin-bottom:6px">Loại inox</label>
+              <select name="grade" required
+                style="width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:var(--text);outline:none">
+                <option value="">Chọn loại</option>
+                <option>Inox 201</option>
+                <option>Inox 304</option>
+                <option>Inox 316</option>
+                <option>Tấm inox màu</option>
+                <option>Tấm inox chống trượt</option>
+              </select>
+            </div>
+
+            <div>
+              <label style="display:block;color:var(--muted2);font-size:12px;margin-bottom:6px">Độ dày (mm)</label>
+              <input name="thickness" placeholder="Ví dụ: 0.8 / 1.0 / 2.0 / 5.0"
+                style="width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:var(--text);outline:none" />
+            </div>
+
+            <div>
+              <label style="display:block;color:var(--muted2);font-size:12px;margin-bottom:6px">Quy cách cắt</label>
+              <input name="size" placeholder="Ví dụ: 1m x 2m / cắt theo bản vẽ"
+                style="width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:var(--text);outline:none" />
+            </div>
+
+            <div style="grid-column:1/-1">
+              <label style="display:block;color:var(--muted2);font-size:12px;margin-bottom:6px">Ghi chú</label>
+              <textarea name="note" rows="4" placeholder="Số lượng, bề mặt (2B/HL/No.1...), yêu cầu giao hàng..."
+                style="width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:var(--text);outline:none;resize:vertical"></textarea>
+            </div>
+
+            <div style="grid-column:1/-1; display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:space-between;">
+              <button class="btn primary" type="submit" style="border:none">
+                Gửi yêu cầu báo giá <span class="arrow">→</span>
+              </button>
+              <span id="formMsg" style="color:rgba(255,255,255,.60);font-size:13px"></span>
+            </div>
+          </form>
+        </div>
+
+        <div class="card" style="padding:16px">
+          <div class="item" style="margin:0; background: rgba(255,255,255,.04)">
+            <div class="tagRow">
+              <span class="tag">Tư vấn nhanh</span>
+              <span class="tag">Báo giá trong ngày</span>
+              <span class="tag">Cắt theo yêu cầu</span>
+            </div>
+            <h3>Thông tin liên hệ</h3>
+            <p>
+              Bạn có thể thay thế các thông tin dưới đây bằng số hotline / Zalo / email thực tế của Inox Tân Đạt.
+            </p>
+            <ul>
+              <li><b>Hotline:</b> <a href="tel:0900000000">0900 000 000</a></li>
+              <li><b>Zalo:</b> <a href="https://zalo.me/" target="_blank" rel="noopener">Chat Zalo</a></li>
+              <li><b>Email:</b> <a href="mailto:kinhdoanh@inoxtandat.vn">kinhdoanh@inoxtandat.vn</a></li>
+              <li><b>Website:</b> <a href="https://inoxtandat.vn/" target="_blank" rel="noopener">inoxtandat.vn</a></li>
+            </ul>
+            <div class="actions">
+              <a class="linkBtn" href="https://inoxtandat.vn/san-pham/tam-inox/" target="_blank" rel="noopener">Mở danh mục tấm inox <span class="arrow">→</span></a>
+              <a class="linkBtn soft" href="#san-pham">Xem sản phẩm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footGrid">
+        <div class="footBox">
+          <h4>Inox Tân Đạt — Tấm inox chất lượng, tư vấn đúng nhu cầu</h4>
+          <p>
+            Trang demo 1-page: bạn có thể dùng ngay làm landing page cho tấm inox 201/304/316,
+            sau đó thay hotline, địa chỉ, hình ảnh thực tế & thông số kho để hoàn thiện.
+          </p>
+          <div class="copy">© <span id="y"></span> Inox Tân Đạt. All rights reserved.</div>
+        </div>
+
+        <div class="footBox">
+          <h4>Liên kết nhanh</h4>
+          <ul>
+            <li><a href="https://inoxtandat.vn/san-pham/tam-inox/" target="_blank" rel="noopener">Danh mục tấm inox</a></li>
+            <li><a href="https://inoxtandat.vn/tin-chuyen-nganh/bang-gia-inox-304-tam-moi-nhat-2024-530.html" target="_blank" rel="noopener">Bảng giá inox 304</a></li>
+            <li><a href="https://inoxtandat.vn/tin-chuyen-nganh/bang-bao-gia-tam-inox-201-moi-nhat-2024-531.html" target="_blank" rel="noopener">Bảng giá inox 201</a></li>
+            <li><a href="https://inoxtandat.vn/tin-chuyen-nganh/bang-bao-gia-tam-inox-316-moi-nhat-2024-560.html" target="_blank" rel="noopener">Bảng giá inox 316</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Năm hiện tại
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Form demo: không gửi server, chỉ hiển thị thông báo.
+    const form = document.getElementById('quoteForm');
+    const msg = document.getElementById('formMsg');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = new FormData(form);
+      const name = (data.get('name') || '').toString().trim();
+      const grade = (data.get('grade') || '').toString().trim();
+      msg.textContent = `Đã nhận yêu cầu của ${name} (${grade}). Vui lòng thay script để gửi về CRM/Zalo/Email.`;
+      form.reset();
+      setTimeout(() => msg.textContent = '', 6000);
+    });
+  </script>
+</body>
+</html>
